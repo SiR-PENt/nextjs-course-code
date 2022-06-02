@@ -23,7 +23,6 @@ function NewMeetupForm(props) {
       address: enteredAddress,
       description: enteredDescription,
     };
-
     props.onAddMeetup(meetupData);
   }
 

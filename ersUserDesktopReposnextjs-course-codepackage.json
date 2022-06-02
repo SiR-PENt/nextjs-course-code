@@ -1,0 +1,179 @@
+[33mcommit f51cedd4828d9a6dff79f73d4d5ea020af63f28c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Thu Feb 18 09:31:52 2021 +0100
+
+    fixed styles
+
+[33mcommit 5b6320cbbc512ae013d7336bda7538a8dbbec825[m[33m ([m[1;31morigin/11-deployment[m[33m)[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Thu Feb 18 09:05:25 2021 +0100
+
+    improved syntax highlighting package
+
+[33mcommit 514c804d6b000a97a4d91e036c6b431adacf4f3d[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Thu Feb 18 08:56:29 2021 +0100
+
+    added env
+
+[33mcommit 3b99cd06f8a5691128c11cf3d6a4c396bfb80c70[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 11:43:53 2021 +0100
+
+    added a portal
+
+[33mcommit c47ea26ed8c5056313b994042207a6ffefbe4957[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 11:39:39 2021 +0100
+
+    added head and metadata
+
+[33mcommit a3ce56d88190b8b1b5e72d95f3b80f8faa1457b8[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 11:27:34 2021 +0100
+
+    notification feedback for contact form
+
+[33mcommit 07e696b90720bf4451869c49240d5e8fc79d59c2[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 11:10:20 2021 +0100
+
+    storing data in mongodb
+
+[33mcommit c096246ff06cf21b0e7774638d382ae13618a2cc[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 10:56:20 2021 +0100
+
+    getting + sending data on the client
+
+[33mcommit e9eac62c2c6f49baec637388aeaed856a9faa22d[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 10:48:05 2021 +0100
+
+    added api route - without db
+
+[33mcommit 1f716688c16b318ab77e3c49602d705adb8a7684[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 10:42:59 2021 +0100
+
+    added a contactform
+
+[33mcommit 27a57af7683c4eb549ec2bb9e0cf6b1c6a7193f4[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 10:36:54 2021 +0100
+
+    rendering code snippets
+
+[33mcommit a97a6786b488d2814e5678ab3f2139239b31a6bd[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 10:29:13 2021 +0100
+
+    rendering a custom next image from markdown content
+
+[33mcommit c0b30f4dbbe660dd14207f4068dc2b9d88d385f1[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 10:12:00 2021 +0100
+
+    fetching and using data for single post
+
+[33mcommit 63aac59a4f9589b3689542c372fc4cc6b67fc8ab[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 09:53:35 2021 +0100
+
+    using all and featured posts data in pages
+
+[33mcommit e2c265179ccb36f145626f5cfc264718375dc339[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 09:44:09 2021 +0100
+
+    added post fetching functions
+
+[33mcommit 89e2d4caa30f58866f9883b2feaf27bec5302a1e[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 09:26:07 2021 +0100
+
+    added first markdown file
+
+[33mcommit c30ffe1ff9b5acb273c24833729114ecb24aa55e[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 09:17:20 2021 +0100
+
+    added react-markdown
+
+[33mcommit b52dd7f2bb74047c55bf6079aa9b4a1c0ae8b711[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 09:13:51 2021 +0100
+
+    added single post page - with no markdown conversion yet
+
+[33mcommit d9c5e8bead8c8a00e1bb778d7eb5d4d4d0b5e373[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 08:56:18 2021 +0100
+
+    added all posts page
+
+[33mcommit 171b5f1e5a028c8cf5148b2b33e68b4150f6e9bb[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 08:51:24 2021 +0100
+
+    added dummy posts, fixed post-item image and link
+
+[33mcommit 29320372dfceb20ecf592d1acb8b2ceb549695e0[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 08:34:48 2021 +0100
+
+    added base post-item skeleton - no data yet
+
+[33mcommit c0bc4f2c73b81e95af17de314cebb76512891c07[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 08:24:21 2021 +0100
+
+    added posts-grid + styles
+
+[33mcommit 5d6625117040fe6b0cdc2c5d741795eeb217ea4c[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 08:17:45 2021 +0100
+
+    added navigation, layout, logo and styles
+
+[33mcommit 8abef7f8e0d826595f385aa9f51943a726d2fa6e[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 08:04:18 2021 +0100
+
+    added hero cmp with image
+
+[33mcommit 8320dfb41115fdbf4980318d6b6e5f114f0982d0[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 07:54:59 2021 +0100
+
+    created empty hero and featured-posts cmp with styling
+
+[33mcommit 2ba2d52aba766b44bc0279a6d1cc6ec962dc0caa[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 07:48:14 2021 +0100
+
+    added first pages
+
+[33mcommit 07849776424a7b0f111804e1130acc4e61169252[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Wed Feb 17 07:42:47 2021 +0100
+
+    updated starting project - with proper global styles
+
+[33mcommit 735bbf47d91b2d5b85d0fc5f018bc566ce9c0fdb[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Thu Feb 4 08:21:32 2021 +0100
+
+    added vs code settings
+
+[33mcommit 21cce81098c0f6e4a0fe92cd2e3f2f8268373122[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Thu Feb 4 08:20:33 2021 +0100
+
+    updated (cleaned) setup
+
+[33mcommit 717f57288ade0d83d2dd9c73fc49ac9bbd106da3[m
+Author: Maximilian Schwarzmüller <28806196+maxschwarzmueller@users.noreply.github.com>
+Date:   Thu Feb 4 08:18:21 2021 +0100
+
+    Initial commit from Create Next App
