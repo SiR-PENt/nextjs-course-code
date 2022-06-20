@@ -1,4 +1,5 @@
 import MeetupList from "../components/meetups/MeetupList";
+import { MongoClient } from "mongodb";//this package imported here will not be exposed to the client-side if we are only using it in the server-side 
 
 const DUMMY_MEETUPS = [
   {
@@ -51,14 +52,27 @@ function HomePage(props) {
     // NB: running `npm run build` for this app, we get 4 pages(which are from the pages folder). 3 pages in the pages folder plus a custom 404 page.
     
     //WHAT I UNDERSTAND BY GETSTATICPROPS
-
+    // You have to run build everytime data is changed. To automatically run build everytime in the server, we unlock a feature called incremental static generation
     return <MeetupList meetups={props.meetups} />        
 }
-export function getStaticProps() {
+export async function getStaticProps() {
+
+   const client = await MongoClient.connect('mongodb+srv://SiRPENt:&unkanm1@cluster0.yqbu3.mongodb.net/meetups?retryWrites=true&w=majority')
+   const db = client.db();
+   const meetupsCollection = db.collection('meetups') 
+   const meetups = await meetupsCollection.find().toArray();// find meetupsCollection data and convert promise return to array
+   client.close()
   return {
     props: {
-      meetups: DUMMY_MEETUPS,
-    }
+      meetups: meetups.map(meetup => {
+        title: meetup.title,
+        address: meetup.address,
+        image: meetup.image,
+        id:meetup._id.toString(),//convert meetup to string so it useable
+      }),
+    }, 
+    revalidate:10,
+
   }
 }
 export default HomePage;

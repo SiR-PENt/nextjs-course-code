@@ -5,8 +5,7 @@ import classes from './MeetupItem.module.css';
 function MeetupItem(props) {
   const router = useRouter();
 
-  function showDetailsHandler() {
-     console.log(props);
+function showDetailsHandler() {
     router.push('/' + props.id)
   } //more like PUSH from react-router, this navigates through routes
 
