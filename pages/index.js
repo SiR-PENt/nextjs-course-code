@@ -1,24 +1,8 @@
 import MeetupList from "../components/meetups/MeetupList";
 import { MongoClient } from "mongodb";//this package imported here will not be exposed to the client-side if we are only using it in the server-side 
+import { Fragment } from "react";
+import Head from 'next/head'
 
-const DUMMY_MEETUPS = [
-  {
-    id: "m1",
-    title: "A First Meetup",
-    image:
-      "https://media.istockphoto.com/photos/the-leaning-tower-in-pisa-picture-id929861782?k=20&m=929861782&s=612x612&w=0&h=fPhTAo1b8DGV98Mg-I2MJVtiYa9d83HvUCCE9qY4f-w=",
-    address: "Some address 5, 12345 Some City",
-    description: "This is the first Meetup",
-  },
-  {
-    id: "m2",
-    title: "A Second Meetup",
-    image:
-      "https://media.istockphoto.com/photos/the-leaning-tower-in-pisa-picture-id929861782?k=20&m=929861782&s=612x612&w=0&h=fPhTAo1b8DGV98Mg-I2MJVtiYa9d83HvUCCE9qY4f-w=",
-    address: "Some address 5, 12345 Some City",
-    description: "This is the Second Meetup",
-  },
-];
 
 function HomePage(props) {
 
@@ -53,26 +37,35 @@ function HomePage(props) {
     
     //WHAT I UNDERSTAND BY GETSTATICPROPS
     // You have to run build everytime data is changed. To automatically run build everytime in the server, we unlock a feature called incremental static generation
-    return <MeetupList meetups={props.meetups} />        
+    return (
+      <Fragment>
+        <Head>
+          <title>React Meetups</title>
+          <meta name='description' content='Browse a huge list of highly active React meetups'/> 
+        </Head>
+           <MeetupList meetups={props.meetups} />
+      </Fragment>
+    );       
 }
+
 export async function getStaticProps() {
 
    const client = await MongoClient.connect('mongodb+srv://SiRPENt:&unkanm1@cluster0.yqbu3.mongodb.net/meetups?retryWrites=true&w=majority')
    const db = client.db();
-   const meetupsCollection = db.collection('meetups') 
+   const meetupsCollection = db.collection('meetups');
    const meetups = await meetupsCollection.find().toArray();// find meetupsCollection data and convert promise return to array
    client.close()
+
   return {
     props: {
-      meetups: meetups.map(meetup => {
+      meetups: meetups.map(meetup => ({ 
         title: meetup.title,
         address: meetup.address,
         image: meetup.image,
-        id:meetup._id.toString(),//convert meetup to string so it useable
-      }),
+        id:meetup._id.toString(),//convert meetup to string so it's useable
+      })),
     }, 
     revalidate:10,
-
   }
 }
 export default HomePage;

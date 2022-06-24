@@ -1,4 +1,4 @@
-// the api folder has to be named api. And it has to be in the pages folder.  THey don't return html code, they are about returning http request such as patch, post, delete. get request with json data attached to them. API routes allow you to build your owm api endpoints as part of a next project. When you add files to the folder, the file names act as file segment in the url. For this file, the path is
+// the api folder has to be named api. And it has to be in the pages folder.  THey don't return html code, they are about returning http request such as patch, post, delete, get request with json data attached to them. API routes allow you to build your owm api endpoints as part of a next project. When you add files to the folder, the file names act as file segment in the url. For this file, the path is
 // /api/new-meetup
 import { MongoClient} from 'mongodb'
 
